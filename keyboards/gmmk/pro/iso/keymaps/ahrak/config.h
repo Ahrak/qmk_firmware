@@ -1,0 +1,24 @@
+#pragma once
+
+#include "config_common.h"
+
+#define DRIVER_1_LED_TOTAL 66
+#define DRIVER_2_LED_TOTAL 33
+#define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
+
+//enable RGB Matrix Effects for Vial
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_KEYPRESSES
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define RGB_MATRIX_STARTUP_SAT 255
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
+#define OPENRGB_ENABLE = yes
+//#define EXTRAFLAGS += -flto
+
+//Vial Keyboard UID
+#define VIAL_KEYBOARD_UID {0xEC, 0xFE, 0x5D, 0x44, 0x1A, 0x9C, 0x70, 0xCC}
+#define VIAL_UNLOCK_COMBO_ROWS { 1, 10 }
+#define VIAL_UNLOCK_COMBO_COLS { 3, 4 }
+#define VIAL_ENCODER_KEYCODE_DELAY 25
+
+
